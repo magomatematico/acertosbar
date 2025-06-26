@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>NOME Animado</title>
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      overflow: hidden;
+    }
+
+    .nome {
+      position: absolute;
+      font-size: 100px;
+      color: #fff;
+      text-shadow: 0 0 20px #0ff, 0 0 40px #0ff, 0 0 60px #0ff;
+      animation: mover 5s linear infinite alternate;
+      white-space: nowrap;
+    }
+
+    @keyframes mover {
+      0% {
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      100% {
+        left: calc(100% - 400px); /* Ajuste conforme o tamanho da palavra */
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="nome">ACERTOSBAR</div>
+</body>
+</html>
